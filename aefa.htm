@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AEFA — Agribusiness & Environmental Focus for Africa</title>
+  <meta name="description" content="AEFA: empowering smallholder farmers in Machakos, Makueni & Kitui through climate-smart agribusiness and community-led development." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%23086f46' d='M32 4l8.8 17.8L60 24l-14 13.6 3.3 19.3L32 48l-17.3 8.9L18 37.6 4 24l19.2-2.2z'/%3E%3C/svg%3E" />
+  <style>
+    /* —— Minimal reset + variables —— */
+    *,*::before,*::after{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;line-height:1.6;color:#0f172a;background:#f7f9f8}
+    img{max-width:100%;display:block;height:auto}
+    a{color:inherit}
+    :root{--brand:#086f46;--accent:#0ea678;--muted:#445;--bg:#fff;--radius:14px;--shadow:0 8px 24px rgba(6,40,20,.08)}
+    .container{max-width:1100px;margin-inline:auto;padding:0 1rem}
+    header{background:linear-gradient(90deg,rgba(8,111,70,.98),rgba(14,166,120,.95));color:#fff;padding:.8rem 0;position:sticky;top:0;z-index:30}
+    .nav{display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:.6rem;align-items:center}
+    .brand .logo{width:40px;height:40px;border-radius:8px;background:linear-gradient(135deg,var(--brand),var(--accent));box-shadow:var(--shadow)}
+    .nav a{color:rgba(255,255,255,.95);text-decoration:none;margin-left:1rem}
+    .btn{background:#fff;color:var(--brand);padding:.6rem 1rem;border-radius:999px;font-weight:700;text-decoration:none}
+
+    main{padding:2.5rem 0}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:2rem;align-items:center}
+    .hero h1{font-size:2rem;margin:.2rem 0;color:var(--brand)}
+    .badge{background:#e6f8ef;color:var(--brand);padding:.25rem .6rem;border-radius:999px;font-weight:700}
+    .card{background:var(--bg);border-radius:var(--radius);box-shadow:var(--shadow);padding:1rem}
+
+    section{margin-top:2rem}
+    .section__title{font-size:1.4rem;color:var(--brand);margin:.4rem 0}
+    .lead{color:var(--muted);max-width:68ch}
+
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}.grid-3,.grid-2{grid-template-columns:1fr}}
+
+    footer{background:#072c1b;color:#d6efe4;padding:2rem 0;margin-top:2rem}
+    .small{font-size:.95rem;color:#0b2b1a}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <img src="C:\Users\James Gacheru\Desktop\Python Projects\Aefa Website\Picture1.jpg" alt="AEFA Logo" style="height:45px;width:auto;border-radius:8px;box-shadow:var(--shadow)">
+        <div>
+          <strong>AEFA</strong>
+          <div style="font-size:.85rem">Agribusiness & Environmental Focus for Africa</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#approach">Approach</a>
+        <a href="#partners">Partners</a>
+        <a class="btn" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div>
+        <span class="badge">Founded 2009</span>
+        <h1>Empowering smallholder farmers towards sustainable, climate‑resilient livelihoods</h1>
+        <p class="lead">AEFA works with communities, county governments and research institutions across Machakos, Makueni and Kitui to transform smallholder agriculture into profitable, sustainable agribusiness through capacity development, climate smart interventions and market linkages.</p>
+        <div style="margin-top:1rem;display:flex;gap:.6rem;flex-wrap:wrap">
+          <a class="btn" href="#projects">Our projects</a>
+          <a href="#about" style="align-self:center">Read profile</a>
+          <a class="btn" href="#donate">Donate Now</a> <!-- Donate button in hero -->
+        </div>
+        
+        <!-- ✅ Add the Gallery here -->
+  <section class="gallery">
+    <h2>Our Gallery</h2>
+    <div class="gallery-container">
+      <img src="images/photo1.jpg" alt="Gallery Photo 1">
+      <img src="images/photo2.jpg" alt="Gallery Photo 2">
+      <img src="images/photo3.jpg" alt="Gallery Photo 3">
+      <img src="images/photo4.jpg" alt="Gallery Photo 4">
+    </div>
+      </div>
+      <div>
+        <img src="C:\Users\James Gacheru\Desktop\Python Projects\Aefa Website\WhatsApp Image 2025-08-31 at 18.28.54.jpeg" alt="Smallholder farmers" class="card" style="height:320px;object-fit:cover"/>
+      </div>
+    </section>
+
+    <!-- Profile & Capacity statement -->
+    <section id="about" class="card">
+      <h2 class="section__title">Profile & Capacity Statement</h2>
+      <p><strong>Who we are</strong><br/>Founded in 2009, Agribusiness & Environmental Focus for Africa (AEFA) works with communities and partners to improve livelihoods through Sustainable Community Empowerment Initiatives.</p>
+
+      <div class="grid-2" style="margin-top:1rem">
+        <div class="card">
+          <h3>Vision</h3>
+          <p>To see a self‑sustaining society.</p>
+          <h3>Mission</h3>
+          <p>To empower vulnerable groups with an aim of achieving livelihood‑related MDGs at community level.</p>
+        </div>
+        <div class="card">
+          <h3>Objectives</h3>
+          <ol>
+            <li>Develop community working groups as a tool for mobilization, sensitization and awareness creation.</li>
+            <li>Empower communities towards attaining self‑sustenance.</li>
+            <li>Network with other actors in facilitating and implementing community development projects.</li>
+          </ol>
+          <p><strong>Area coverage:</strong> Machakos, Makueni &amp; Kitui<br/><strong>Target population:</strong> Smallholder farmers</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Approach -->
+    <section id="approach">
+      <div class="card">
+        <h2 class="section__title">Our approach</h2>
+        <p class="lead">AEFA's strategy for sustainable livelihoods is guided by three complementary approaches.</p>
+        <div style="margin-top:1rem" class="grid-3">
+          <div>
+            <h4>1. Empowering youth & women</h4>
+            <p>We build capacities, information access and leadership for women and youth so they can act as change agents in their households and communities.</p>
+          </div>
+          <div>
+            <h4>2. Grassroots mobilization</h4>
+            <p>We mobilize communities into self‑help groups and use participatory decision‑making to strengthen leadership, access to credit, extension services and value chains.</p>
+          </div>
+          <div>
+            <h4>3. Strategic partnerships</h4>
+            <p>We partner with county governments, CBOs, universities, research institutions and the private sector to scale skills, research and market access.</p>
+          </div>
+        </div>
+
+        <h3 style="margin-top:1rem">Key interventions</h3>
+        <ul>
+          <li>Capacity development: SHG formation (20–40 members), leadership, bookkeeping and enterprise skills.</li>
+          <li>Value addition & technology transfer: processing, packaging and market positioning.</li>
+          <li>Knowledge management & market linkages.</li>
+          <li>Agro‑enterprise stimulation and revitalization of agricultural production.</li>
+          <li>Prevention of post‑harvest losses and improving competitiveness.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2 class="section__title">Our Projects</h2>
+      <div class="grid-2" style="margin-top:1rem">
+        <div class="card">
+          <h3>Climate Smart Agriculture</h3>
+          <p>We promote resilient farming practices, agri‑entrepreneurship for women and youth, and value addition while protecting the environment. Interventions include training on Good Agricultural Practices (GAP), drip irrigation kits, gunny bag kitchen gardens, water‑retaining pits and resource mobilization.</p>
+          <p><strong>Activities:</strong> seedling distribution, GAP training, value addition, market linkages and resource mobilization.</p>
+        </div>
+        <div class="card">
+          <h3>Environment, Climate Change & Productive Landscapes</h3>
+          <p>We implement biodiversity and tree‑growing initiatives, promote energy‑efficient cookstoves, and build capacity in agroforestry and sustainable forest‑based enterprises.</p>
+        </div>
+      </div>
+
+      <div class="grid-2" style="margin-top:1rem">
+        <div class="card">
+          <h3>Youth & Women Empowerment</h3>
+          <p>We deliver leadership & governance training, enterprise development, post‑harvest handling, branding, access to credit and market linkages to transform livelihoods.</p>
+        </div>
+        <div class="card">
+          <h3>Value Addition & Market Development</h3>
+          <p>From processing to packaging, we help farmers increase shelf life and value of produce and link them to buyers to improve incomes.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners -->
+    <section id="partners" class="card">
+      <h2 class="section__title">Our partners</h2>
+      <p class="lead">AEFA has implemented projects in Lower Eastern Kenya with support and collaboration from national and international partners.</p>
+      <ul>
+        <li>HIVOS Netherlands</li>
+        <li>Kenya Agricultural &amp; Livestock Research Organization (KALRO)</li>
+        <li>Kenya Forestry Service, Machakos</li>
+        <li>Ministry of Gender &amp; Social Services</li>
+        <li>Ministry of Environment &amp; Natural Resources</li>
+        <li>South Eastern Kenya University (SEKU)</li>
+        <li>McGill University, Canada</li>
+        <li>County Governments of Machakos, Makueni &amp; Kitui</li>
+        <li>PUM Netherlands</li>
+      </ul>
+    </section>
+
+    <!-- Past Projects & Annex -->
+    <section class="card">
+      <h2 class="section__title">Selected past projects & highlights</h2>
+      <ul>
+        <li><strong>2013–2016:</strong> Lower Eastern Agribusiness Project (LEAP) — partners: HIVOS, McGill, KALRO, local CBOs. Contract value: €280,000.</li>
+        <li><strong>2016–2017:</strong> Integrated Dryland Farming Project (IDFP) — partners: HIVOS, research institutions. Contract value: €180,000.</li>
+        <li><strong>2018–date:</strong> Machakos Integrated Women Empowerment Project (MIWEP) — partner: National Government Affirmative Action Fund. Contract value: Kshs 12,000,000.</li>
+      </ul>
+
+      <h3 style="margin-top:1rem">Annex</h3>
+      <p>Project photos, staff profiles and event highlights (e.g., tree planting campaigns, drip irrigation rollouts, cookstove trainings) — include your images in this section to showcase impact.</p>
+    </section>
+
+     <!-- Donate Section -->
+    <section id="donate" class="card">
+      <h2 class="section__title">Support Our Work</h2>
+      <p class="lead">Your donation helps AEFA empower smallholder farmers, protect the environment, and build climate-resilient communities.</p>
+      
+      <div class="donate-box">
+        <h3>Donation Options</h3>
+        <p><strong>Bank Account:</strong><br>
+        Bank: Equity Bank<br>
+        Account Name: AEFA Kenya<br>
+        Account Number: 1234567890<br>
+        Branch: Machakos</p>
+
+        <p><strong>M-Pesa Paybill:</strong><br>
+        Paybill Number: 567890<br>
+        Account Name: AEFA</p>
+
+        <p><strong>PayPal:</strong> <a href="https://www.paypal.com/donate" target="_blank" rel="noopener">Donate via PayPal</a></p>
+        
+        <a class="btn" href="mailto:info@aefa.co.ke?subject=Donation to AEFA">Contact us for more info</a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" style="margin-top:1rem">
+      <div class="card">
+        <h2 class="section__title">Contact & Office</h2>
+        <p class="small"><strong>Address:</strong> P.O. Box 18090 – 00100, Nairobi<br/><strong>Tel:</strong> +254 722 604 204/ +254 101 654074<br/><strong>Website:</strong> <a href="https://www.aefa.co.ke" target="_blank" rel="noopener">www.aefa.co.ke</a><br/><strong>Email:</strong> <a href="mailto:info@aefa.co.ke">info@aefa.co.ke</a></p>
+
+        <form style="margin-top:1rem" onsubmit="event.preventDefault();alert('Demo: form submitted — connect this to your email or backend');this.reset();">
+          <label for="name">Your name</label>
+          <input id="name" required style="width:100%;padding:.6rem;border-radius:10px;border:1px solid #dfe" />
+          <label for="email" style="margin-top:.5rem">Email</label>
+          <input id="email" type="email" required style="width:100%;padding:.6rem;border-radius:10px;border:1px solid #dfe" />
+          <label for="message" style="margin-top:.5rem">Message</label>
+          <textarea id="message" rows="4" style="width:100%;padding:.6rem;border-radius:10px;border:1px solid #dfe"></textarea>
+          <div style="margin-top:.75rem"><button class="btn">Send message</button></div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap">
+        <div>
+          <strong>AEFA</strong>
+          <div class="small">P.O. Box 18090 – 00100, Nairobi • Tel: +254 722 604 204/ +254 101 654074 • info@aefa.co.ke</div>
+        </div>
+        <div class="small">© <span id="year"></span> AEFA — All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
