@@ -136,23 +136,98 @@ document.addEventListener("DOMContentLoaded", function() {
         
         <!-- ✅ Add the Gallery here -->
  <!-- ✅ Gallery Section -->
+<!-- ✅ Gallery Slider -->
 <section class="gallery">
   <h2>Our Gallery</h2>
-  <div class="gallery-container">
-    <div class="gallery-item">
-      <img src="images/photo1.jpeg" alt="Gallery Photo 1">
+  <div class="slider">
+    <div class="slides">
+      <img src="images/photo1.jpg" alt="Gallery Photo 1">
+      <img src="images/photo2.jpg" alt="Gallery Photo 2">
+      <img src="images/photo3.jpg" alt="Gallery Photo 3">
+      <img src="images/photo4.jpg" alt="Gallery Photo 4">
     </div>
-    <div class="gallery-item">
-      <img src="images/photo2.jpeg" alt="Gallery Photo 2">
-    </div>
-    <div class="gallery-item">
-      <img src="images/photo3.jpeg" alt="Gallery Photo 3">
-    </div>
-    <div class="gallery-item">
-      <img src="images/photo4.jpeg" alt="Gallery Photo 4">
-    </div>
+    <!-- Navigation buttons -->
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
   </div>
 </section>
+
+<style>
+.gallery {
+  text-align: center;
+  padding: 20px;
+}
+
+.slider {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+  width: 100%;
+  border-radius: 12px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+/* Navigation buttons */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+</style>
+
+<script>
+let slideIndex = 0;
+const slides = document.querySelector('.slides');
+const totalSlides = slides.children.length;
+
+function showSlide(index) {
+  if (index >= totalSlides) slideIndex = 0;
+  if (index < 0) slideIndex = totalSlides - 1;
+  slides.style.transform = `translateX(${-slideIndex * 100}%)`;
+}
+
+document.querySelector('.next').addEventListener('click', () => {
+  slideIndex++;
+  showSlide(slideIndex);
+});
+
+document.querySelector('.prev').addEventListener('click', () => {
+  slideIndex--;
+  showSlide(slideIndex);
+});
+
+// Auto-slide every 4 seconds
+setInterval(() => {
+  slideIndex++;
+  showSlide(slideIndex);
+}, 4000);
+</script>
+
 
 
     </div>
@@ -330,6 +405,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
+
 
 
 
